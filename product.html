@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Product Details — SUREA | British Heritage for Dogs</title>
+<meta name="description" content="Discover handcrafted British heritage clothing and lifestyle accessories for your dog.">
+<meta name="theme-color" content="#23392d">
+<meta property="og:title" content="Product Details — SUREA">
+<meta property="og:description" content="British heritage fabrics, thoughtful details.">
+<meta property="og:type" content="product">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="announce">
+  <div class="wrap announce__inner">
+    <span>Complimentary shipping on orders over $100</span>
+    <span class="announce__sep" aria-hidden="true">/</span>
+    <span>A kinder world for dogs</span>
+    <span class="announce__right"><span class="announce__sep" aria-hidden="true">/</span> United States · USD</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <button class="burger" type="button" data-nav-toggle aria-expanded="false" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <a class="wordmark" href="index.html">
+      <span class="wordmark__name">SUREA</span>
+      <span class="wordmark__tag">Dogs · People · A Kinder World</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <ul class="nav__list">
+        <li><a class="nav__link" href="shop.html">Shop</a></li>
+        <li><a class="nav__link" href="shop.html?cat=clothing">Dog Clothing</a></li>
+        <li><a class="nav__link" href="shop.html?cat=walk">Walk Set</a></li>
+        <li><a class="nav__link" href="shop.html?cat=travel">Travel</a></li>
+        <li><a class="nav__link" href="shop.html?cat=home">Home</a></li>
+        <li><a class="nav__link" href="about.html">About</a></li>
+        <li><a class="nav__link" href="journal.html">Journal</a></li>
+      </ul>
+    </nav>
+    <div class="header-tools">
+      <button class="tool" type="button" data-search-toggle aria-label="Search the collection"><span data-icon="search"></span></button>
+      <a class="tool" href="contact.html" aria-label="Customer care"><span data-icon="user"></span></a>
+      <button class="tool" type="button" data-open-bag aria-label="Open your shopping bag">
+        <span data-icon="bag"></span><span class="tool__count" data-bag-count>0</span>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-nav" data-mobile-nav aria-label="Mobile">
+    <ul>
+      <li><a href="shop.html">Shop all</a></li>
+      <li><a href="shop.html?cat=clothing">Dog Clothing</a></li>
+      <li><a href="shop.html?cat=walk">Walk Set</a></li>
+      <li><a href="shop.html?cat=travel">Travel</a></li>
+      <li><a href="shop.html?cat=home">Home &amp; Beds</a></li>
+      <li><a href="collection.html">Collection 01</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="journal.html">Journal</a></li>
+      <li><a href="size-guide.html">Size Guide</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="wrap" style="padding-top: clamp(24px, 4vw, 40px);">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span aria-hidden="true">/</span>
+      <a href="shop.html">Shop</a>
+      <span aria-hidden="true">/</span>
+      <a href="shop.html" id="pdp-crumb-cat">Category</a>
+      <span aria-hidden="true">/</span>
+      <span id="pdp-crumb-name">Product</span>
+    </nav>
+
+    <!-- Not found state -->
+    <div class="empty-state" id="pdp-not-found" style="display: none;">
+      <h1 class="h-2">Piece Not Found</h1>
+      <p class="mt-s">The item you are searching for may have been retired or moved.</p>
+      <p class="mt-m"><a class="btn btn--solid" href="shop.html">Explore our collection <span class="arrow" data-icon="arrow"></span></a></p>
+    </div>
+
+    <!-- PDP Content -->
+    <div class="pdp" id="pdp-content">
+      <!-- Media Gallery -->
+      <div class="pdp__media">
+        <div class="pdp__main">
+          <img id="pdp-main-image" src="assets/img/prod-duchess-coat.jpg" alt="" width="1024" height="1280">
+        </div>
+        <div class="pdp__thumbs" id="pdp-thumbs"></div>
+      </div>
+
+      <!-- Information & Actions -->
+      <div class="pdp__info">
+        <div id="pdp-badge-wrapper"></div>
+        <h1 class="h-1 pdp__name" id="pdp-name">The Duchess Coat</h1>
+        <p class="pdp__material" id="pdp-material">Tartan wool blend</p>
+
+        <div class="stars" id="pdp-stars" style="margin-bottom: 16px;"></div>
+
+        <p class="pdp__price" id="pdp-price">$89</p>
+
+        <div class="pdp__desc" id="pdp-desc">
+          <p>Our house tartan, cut short and clean so it sits well over the shoulders and leaves the legs free. Antique brass buttons and a checked cotton lining.</p>
+        </div>
+
+        <!-- Size Selection -->
+        <div class="pdp__sizes-area">
+          <div style="display: flex; justify-content: space-between; align-items: baseline;">
+            <label class="field-label" id="size-label">Select Size</label>
+            <a class="small muted" href="size-guide.html" style="text-decoration: underline;">Size Guide</a>
+          </div>
+          <div class="sizes" id="pdp-sizes" role="radiogroup" aria-labelledby="size-label"></div>
+          <div class="size-hint" id="pdp-size-hint">Please choose a size to add this piece to your bag.</div>
+        </div>
+
+        <!-- Action buttons -->
+        <div class="pdp__actions">
+          <button class="btn btn--solid btn--full" type="button" id="pdp-add-btn">
+            Add to shopping bag <span class="arrow" data-icon="arrow"></span>
+          </button>
+          <button class="btn btn--ghost-light btn--full wishlist-btn" type="button" id="pdp-wish-btn" aria-pressed="false">
+            <span data-icon="heart"></span> Save to Wishlist
+          </button>
+        </div>
+
+        <!-- Accordion details -->
+        <div class="accordion">
+          <div class="accordion__item">
+            <button class="accordion__btn" type="button" aria-expanded="true" data-acc-toggle>
+              <span>Details &amp; Craftsmanship</span>
+              <span class="accordion__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion__panel is-open">
+              <ul id="pdp-details-list"></ul>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__btn" type="button" aria-expanded="false" data-acc-toggle>
+              <span>Sizing &amp; Fit</span>
+              <span class="accordion__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion__panel">
+              <p>Designed with generous room across the chest and back for unrestricted movement during country walks or city strolls. If your dog falls between sizes, we recommend sizing up for broader breeds and sizing down for slender frames.</p>
+              <p class="mt-s"><a href="size-guide.html" class="small" style="text-decoration: underline; color: var(--forest);">View full sizing measurement guide &rarr;</a></p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__btn" type="button" aria-expanded="false" data-acc-toggle>
+              <span>Complimentary Shipping &amp; Returns</span>
+              <span class="accordion__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion__panel">
+              <p>We provide complimentary standard delivery across the United States and the United Kingdom on all orders over $100.</p>
+              <p class="mt-s">Each order arrives in our signature recyclable British gift presentation box. We offer complimentary 30-day returns on unworn pieces with tags attached.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Products -->
+    <section class="section" id="pdp-related-section" style="border-top: 1px solid var(--line); margin-top: clamp(40px, 6vw, 80px);">
+      <div class="section-head section-head--center">
+        <p class="eyebrow">Complete the Wardrobe</p>
+        <h2 class="h-2">You May Also Like</h2>
+      </div>
+      <div class="product-grid" id="pdp-related-grid"></div>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-brand__name">SUREA</p>
+        <p class="footer-brand__tag">Dogs · People · A Kinder World</p>
+        <p class="mt-s small">Join our journey — be the first to hear about new collections, stories and special offers.</p>
+        <form class="subscribe" data-subscribe novalidate>
+          <label class="skip-link" for="subscribe-email">Email address</label>
+          <input id="subscribe-email" type="email" placeholder="Your email address" autocomplete="email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+        <p class="form-note" data-form-note></p>
+      </div>
+      <div>
+        <h4>Customer Care</h4>
+        <ul>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="shipping-returns.html">Shipping &amp; returns</a></li>
+          <li><a href="size-guide.html">Size guide</a></li>
+          <li><a href="contact.html#faqs">FAQs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>About</h4>
+        <ul>
+          <li><a href="about.html">Our story</a></li>
+          <li><a href="collection.html">Collection 01</a></li>
+          <li><a href="about.html#sustainability">Sustainability</a></li>
+          <li><a href="journal.html">Journal</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><span data-icon="instagram"></span></a>
+          <a href="#" aria-label="Pinterest"><span data-icon="pinterest"></span></a>
+          <a href="#" aria-label="TikTok"><span data-icon="tiktok"></span></a>
+          <a href="#" aria-label="Facebook"><span data-icon="facebook"></span></a>
+          <a href="#" aria-label="YouTube"><span data-icon="youtube"></span></a>
+        </div>
+        <p class="small mt-s">For a kinder,<br>more beautiful world.</p>
+      </div>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© <span data-year>2026</span> SUREA. All rights reserved.</span>
+    <span>A kinder world for dogs</span>
+  </div>
+</footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/cart.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var params = new URLSearchParams(window.location.search);
+  var productId = params.get("id") || "duchess-coat";
+  var p = window.SUREA.byId(productId);
+
+  var notFound = document.getElementById("pdp-not-found");
+  var content = document.getElementById("pdp-content");
+  var relatedSection = document.getElementById("pdp-related-section");
+
+  if (!p) {
+    notFound.style.display = "block";
+    content.style.display = "none";
+    relatedSection.style.display = "none";
+    document.title = "Item Not Found — SUREA";
+    return;
+  }
+
+  // Update Page Title & Breadcrumbs
+  document.title = p.name + " — " + p.material + " | SUREA";
+  var catNameMap = {
+    clothing: "Dog Clothing",
+    walk: "Walk Set",
+    travel: "Travel",
+    home: "Home & Beds",
+    foryou: "For You",
+    bundles: "Bundles"
+  };
+  var catCrumb = document.getElementById("pdp-crumb-cat");
+  catCrumb.textContent = catNameMap[p.category] || "Shop";
+  catCrumb.href = "shop.html?cat=" + encodeURIComponent(p.category);
+  document.getElementById("pdp-crumb-name").textContent = p.name;
+
+  // Badge
+  var badgeWrap = document.getElementById("pdp-badge-wrapper");
+  if (p.badge) {
+    badgeWrap.innerHTML = '<span class="badge' + (p.badge === "Bestseller" ? "" : " badge--oxblood") + '" style="position:static; display:inline-block; margin-bottom:12px;">' + SUREAui.esc(p.badge) + '</span>';
+  }
+
+  // Basic Info
+  document.getElementById("pdp-name").textContent = p.name;
+  document.getElementById("pdp-material").textContent = p.material;
+  document.getElementById("pdp-stars").innerHTML = SUREAui.stars(p.reviews.rating, p.reviews.count);
+  document.getElementById("pdp-price").innerHTML = window.SUREA.money(p.price) +
+    (p.compareAt ? ' <s class="price-was">' + window.SUREA.money(p.compareAt) + '</s>' : '');
+  document.getElementById("pdp-desc").innerHTML = '<p>' + SUREAui.esc(p.description) + '</p>';
+
+  // Details
+  var detailsList = document.getElementById("pdp-details-list");
+  if (p.details && p.details.length) {
+    detailsList.innerHTML = p.details.map(function (d) {
+      return "<li>" + SUREAui.esc(d) + "</li>";
+    }).join("");
+  }
+
+  // Media & Gallery
+  var mainImg = document.getElementById("pdp-main-image");
+  mainImg.src = p.image;
+  mainImg.alt = p.name + " — " + p.material;
+
+  var thumbsContainer = document.getElementById("pdp-thumbs");
+  var galleryImages = (p.gallery && p.gallery.length) ? p.gallery : [p.image];
+  if (galleryImages.length > 1) {
+    thumbsContainer.innerHTML = galleryImages.map(function (imgSrc, idx) {
+      return '<button type="button" aria-current="' + (idx === 0 ? 'true' : 'false') + '" data-thumb="' + SUREAui.esc(imgSrc) + '" aria-label="View photo ' + (idx + 1) + '">' +
+        '<img src="' + SUREAui.esc(imgSrc) + '" alt="' + SUREAui.esc(p.name) + ' thumbnail" loading="lazy">' +
+      '</button>';
+    }).join("");
+
+    thumbsContainer.querySelectorAll("[data-thumb]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        thumbsContainer.querySelectorAll("[data-thumb]").forEach(function (b) { b.setAttribute("aria-current", "false"); });
+        btn.setAttribute("aria-current", "true");
+        mainImg.src = btn.getAttribute("data-thumb");
+      });
+    });
+  } else {
+    thumbsContainer.style.display = "none";
+  }
+
+  // Size Selector Logic
+  var sizesContainer = document.getElementById("pdp-sizes");
+  var sizeHint = document.getElementById("pdp-size-hint");
+  var selectedSize = null;
+
+  // Auto-select if single size (e.g. "One size")
+  if (p.sizes.length === 1) {
+    selectedSize = p.sizes[0];
+    sizeHint.textContent = "Selected: " + selectedSize;
+  }
+
+  sizesContainer.innerHTML = p.sizes.map(function (sz) {
+    var isChosen = (sz === selectedSize);
+    return '<button type="button" class="size" data-size-val="' + SUREAui.esc(sz) + '" aria-pressed="' + (isChosen ? 'true' : 'false') + '">' +
+      SUREAui.esc(sz) +
+    '</button>';
+  }).join("");
+
+  sizesContainer.querySelectorAll("[data-size-val]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      selectedSize = btn.getAttribute("data-size-val");
+      sizesContainer.querySelectorAll("[data-size-val]").forEach(function (b) {
+        b.setAttribute("aria-pressed", "false");
+      });
+      btn.setAttribute("aria-pressed", "true");
+      sizeHint.classList.remove("is-error");
+      sizeHint.textContent = "Selected size: " + selectedSize + " — fits true to size.";
+    });
+  });
+
+  // Add to Bag action
+  var addBtn = document.getElementById("pdp-add-btn");
+  addBtn.addEventListener("click", function () {
+    if (!selectedSize) {
+      sizeHint.classList.add("is-error");
+      sizeHint.textContent = "Please select a size above before adding to your bag.";
+      sizesContainer.focus();
+      return;
+    }
+    sizeHint.classList.remove("is-error");
+    window.SUREA_cart.add(p.id, selectedSize, 1);
+  });
+
+  // Wishlist action
+  var wishBtn = document.getElementById("pdp-wish-btn");
+  wishBtn.addEventListener("click", function () {
+    var active = wishBtn.getAttribute("aria-pressed") === "true";
+    wishBtn.setAttribute("aria-pressed", active ? "false" : "true");
+    if (!active) {
+      window.SUREA_cart.toast("Saved to your wishlist");
+    } else {
+      window.SUREA_cart.toast("Removed from your wishlist");
+    }
+  });
+
+  // Accordion toggle
+  document.querySelectorAll("[data-acc-toggle]").forEach(function (toggle) {
+    toggle.addEventListener("click", function () {
+      var expanded = toggle.getAttribute("aria-expanded") === "true";
+      toggle.setAttribute("aria-expanded", expanded ? "false" : "true");
+      var panel = toggle.nextElementSibling;
+      if (panel) panel.classList.toggle("is-open", !expanded);
+    });
+  });
+
+  // Related products
+  var related = window.SUREA.related(p, 4);
+  if (related && related.length) {
+    SUREAui.gridInto("#pdp-related-grid", related);
+  } else {
+    relatedSection.style.display = "none";
+  }
+});
+</script>
+</body>
+</html>

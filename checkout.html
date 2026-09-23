@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checkout — SUREA | British Heritage for Dogs</title>
+<meta name="description" content="Complete your SUREA order. Heritage clothing and timeless lifestyle pieces for your dog.">
+<meta name="theme-color" content="#23392d">
+<meta property="og:title" content="Checkout — SUREA">
+<meta property="og:description" content="Complimentary shipping on orders over $100.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="announce">
+  <div class="wrap announce__inner">
+    <span>Complimentary shipping on orders over $100</span>
+    <span class="announce__sep" aria-hidden="true">/</span>
+    <span>A kinder world for dogs</span>
+    <span class="announce__right"><span class="announce__sep" aria-hidden="true">/</span> United States · USD</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <button class="burger" type="button" data-nav-toggle aria-expanded="false" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <a class="wordmark" href="index.html">
+      <span class="wordmark__name">SUREA</span>
+      <span class="wordmark__tag">Dogs · People · A Kinder World</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <ul class="nav__list">
+        <li><a class="nav__link" href="shop.html">Shop</a></li>
+        <li><a class="nav__link" href="shop.html?cat=clothing">Dog Clothing</a></li>
+        <li><a class="nav__link" href="shop.html?cat=walk">Walk Set</a></li>
+        <li><a class="nav__link" href="shop.html?cat=travel">Travel</a></li>
+        <li><a class="nav__link" href="shop.html?cat=home">Home</a></li>
+        <li><a class="nav__link" href="about.html">About</a></li>
+        <li><a class="nav__link" href="journal.html">Journal</a></li>
+      </ul>
+    </nav>
+    <div class="header-tools">
+      <button class="tool" type="button" data-search-toggle aria-label="Search the collection"><span data-icon="search"></span></button>
+      <a class="tool" href="contact.html" aria-label="Customer care"><span data-icon="user"></span></a>
+      <button class="tool" type="button" data-open-bag aria-label="Open your shopping bag">
+        <span data-icon="bag"></span><span class="tool__count" data-bag-count>0</span>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-nav" data-mobile-nav aria-label="Mobile">
+    <ul>
+      <li><a href="shop.html">Shop all</a></li>
+      <li><a href="shop.html?cat=clothing">Dog Clothing</a></li>
+      <li><a href="shop.html?cat=walk">Walk Set</a></li>
+      <li><a href="shop.html?cat=travel">Travel</a></li>
+      <li><a href="shop.html?cat=home">Home &amp; Beds</a></li>
+      <li><a href="collection.html">Collection 01</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="journal.html">Journal</a></li>
+      <li><a href="size-guide.html">Size Guide</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="wrap" style="padding-block: clamp(32px, 5vw, 64px);">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span aria-hidden="true">/</span>
+      <a href="shop.html">Shop</a>
+      <span aria-hidden="true">/</span>
+      <span>Checkout</span>
+    </nav>
+
+    <!-- Empty bag notice -->
+    <div class="empty-state" id="checkout-empty" style="display: none;">
+      <h1 class="h-2">Your Shopping Bag is Empty</h1>
+      <p class="mt-s">Please select your favourite pieces from our collection before proceeding to checkout.</p>
+      <p class="mt-m"><a class="btn btn--solid" href="shop.html">Discover the collection <span class="arrow" data-icon="arrow"></span></a></p>
+    </div>
+
+    <!-- Active checkout view -->
+    <div id="checkout-active">
+      <!-- Mandatory Demo Notice -->
+      <div class="demo-note" role="status">
+        <strong>Demo Checkout Notice:</strong> This is an interactive store demonstration. No actual payment will be processed, no banking data is transmitted, and your credit card will not be charged.
+      </div>
+
+      <div class="checkout-grid">
+        <!-- Form Section -->
+        <div>
+          <form id="checkout-form" novalidate>
+            <!-- Step 1: Contact -->
+            <div class="panel">
+              <h2 class="panel__title">1. Contact Information</h2>
+              <div class="field">
+                <label for="c-email">Email address <span aria-hidden="true">*</span></label>
+                <input type="email" id="c-email" name="email" placeholder="e.g. emily.radcliffe@example.co.uk" required autocomplete="email">
+              </div>
+              <div class="field">
+                <label for="c-phone">Telephone number <span class="small muted">(for delivery updates)</span></label>
+                <input type="tel" id="c-phone" name="phone" placeholder="e.g. +44 20 7946 0912 or +1 212 555 0199" autocomplete="tel">
+              </div>
+            </div>
+
+            <!-- Step 2: Shipping -->
+            <div class="panel">
+              <h2 class="panel__title">2. Shipping Destination</h2>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                <div class="field">
+                  <label for="c-fname">First name <span aria-hidden="true">*</span></label>
+                  <input type="text" id="c-fname" name="fname" required autocomplete="given-name">
+                </div>
+                <div class="field">
+                  <label for="c-lname">Last name <span aria-hidden="true">*</span></label>
+                  <input type="text" id="c-lname" name="lname" required autocomplete="family-name">
+                </div>
+              </div>
+              <div class="field">
+                <label for="c-addr">Street address <span aria-hidden="true">*</span></label>
+                <input type="text" id="c-addr" name="addr" placeholder="House number and street name" required autocomplete="street-address">
+              </div>
+              <div class="field">
+                <label for="c-suite">Apartment, suite, or unit <span class="small muted">(optional)</span></label>
+                <input type="text" id="c-suite" name="suite" autocomplete="address-line2">
+              </div>
+              <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px;">
+                <div class="field">
+                  <label for="c-city">City <span aria-hidden="true">*</span></label>
+                  <input type="text" id="c-city" name="city" required autocomplete="address-level2">
+                </div>
+                <div class="field">
+                  <label for="c-state">State / County <span aria-hidden="true">*</span></label>
+                  <input type="text" id="c-state" name="state" required autocomplete="address-level1">
+                </div>
+                <div class="field">
+                  <label for="c-postcode">ZIP / Postcode <span aria-hidden="true">*</span></label>
+                  <input type="text" id="c-postcode" name="postcode" required autocomplete="postal-code">
+                </div>
+              </div>
+              <div class="field">
+                <label for="c-country">Country / Region</label>
+                <select id="c-country" name="country" style="width: 100%; padding: 12px 14px;">
+                  <option value="US">United States (USD)</option>
+                  <option value="GB">United Kingdom (USD)</option>
+                  <option value="CA">Canada (USD)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Step 3: Shipping Method -->
+            <div class="panel">
+              <h2 class="panel__title">3. Delivery Method</h2>
+              <div style="display: grid; gap: 12px;">
+                <label style="display: flex; align-items: flex-start; gap: 12px; cursor: pointer; padding: 12px; border: 1px solid var(--line);">
+                  <input type="radio" name="shipping_method" value="standard" checked style="margin-top: 5px;">
+                  <div>
+                    <strong style="color: var(--forest); display: block;">Complimentary Heritage Delivery</strong>
+                    <span class="small muted">4–7 business days · Hand-packaged in British gift presentation box</span>
+                  </div>
+                  <span style="margin-left: auto; font-family: var(--display); color: var(--forest);" id="ship-cost-display">Free</span>
+                </label>
+                <label style="display: flex; align-items: flex-start; gap: 12px; cursor: pointer; padding: 12px; border: 1px solid var(--line);">
+                  <input type="radio" name="shipping_method" value="express" style="margin-top: 5px;">
+                  <div>
+                    <strong style="color: var(--forest); display: block;">Royal Express Courier</strong>
+                    <span class="small muted">1–2 business days · Priority dispatch with direct signature tracking</span>
+                  </div>
+                  <span style="margin-left: auto; font-family: var(--display); color: var(--forest);">$15.00</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Step 4: Payment Simulation -->
+            <div class="panel">
+              <h2 class="panel__title">4. Payment (Demo Simulation)</h2>
+              <p class="small muted" style="margin-bottom: 16px;">
+                In the upcoming release, Stripe checkout will handle card billing securely. For this prototype, a test card simulation is pre-arranged below.
+              </p>
+              <div class="field">
+                <label for="c-card-name">Name on card</label>
+                <input type="text" id="c-card-name" value="Lady Emily Radcliffe" placeholder="Name on card">
+              </div>
+              <div class="field">
+                <label for="c-card-num">Card number (Demo)</label>
+                <input type="text" id="c-card-num" value="•••• •••• •••• 4242" disabled style="background: var(--cream); opacity: 0.85;">
+              </div>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                <div class="field">
+                  <label for="c-card-exp">Expiry</label>
+                  <input type="text" id="c-card-exp" value="12 / 28" disabled style="background: var(--cream); opacity: 0.85;">
+                </div>
+                <div class="field">
+                  <label for="c-card-cvc">Security Code</label>
+                  <input type="text" id="c-card-cvc" value="•••" disabled style="background: var(--cream); opacity: 0.85;">
+                </div>
+              </div>
+              <p class="form-note" id="checkout-error" style="color: var(--oxblood); font-weight: 500;"></p>
+              <button class="btn btn--solid btn--full" type="submit" id="place-order-btn" style="margin-top: 14px; padding: 18px 24px;">
+                Place Demo Order &rarr;
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Summary Column -->
+        <div>
+          <div class="panel" style="position: sticky; top: 80px;">
+            <h2 class="panel__title">Order Summary</h2>
+            <div id="checkout-items-list" style="margin-bottom: 20px; max-height: 400px; overflow-y: auto; padding-right: 4px;"></div>
+
+            <div class="summary-row">
+              <span class="muted">Subtotal</span>
+              <span id="sum-subtotal" style="font-family: var(--display); color: var(--forest);">$0</span>
+            </div>
+            <div class="summary-row">
+              <span class="muted">Delivery</span>
+              <span id="sum-shipping" style="font-family: var(--display); color: var(--forest);">$0</span>
+            </div>
+            <div class="summary-row">
+              <span class="muted">Estimated Taxes</span>
+              <span id="sum-taxes" style="font-family: var(--display); color: var(--forest);">$0.00</span>
+            </div>
+            <div class="summary-row summary-row--total">
+              <span>Total</span>
+              <span id="sum-total">$0</span>
+            </div>
+
+            <div style="margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--line); font-size: 13.5px; color: var(--muted); line-height: 1.6;">
+              <p>✔ Complimentary 30-day returns</p>
+              <p>✔ Hand-packaged in British presentation box</p>
+              <p>✔ Supporting "A Kinder World for Dogs"</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Order Confirmation View -->
+    <div id="checkout-confirmation" style="display: none; max-width: 680px; margin-inline: auto; text-align: center; padding-block: 40px;">
+      <div class="crest-divider"><span data-icon="crown"></span></div>
+      <p class="eyebrow">Demo Order Placed</p>
+      <h1 class="h-1" style="margin-bottom: 14px;">Thank You for Your Order</h1>
+      <p class="script" style="color: var(--forest); font-size: 32px; margin-bottom: 24px;">Same Adventures, Brighter Days</p>
+
+      <div class="panel" style="text-align: left; margin-bottom: 28px;">
+        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--line); padding-bottom: 12px; margin-bottom: 16px;">
+          <span class="muted">Order Reference:</span>
+          <strong id="conf-order-num" style="font-family: var(--label); letter-spacing: 0.14em; color: var(--forest);">#SR-2026-89412</strong>
+        </div>
+        <p class="small">A simulated confirmation and tracking dispatch note has been queued for <strong id="conf-email">your email</strong>.</p>
+        <p class="small mt-s">Your pieces will be prepared by our team and dispatched in our signature presentation box.</p>
+        <div class="demo-note mt-m" style="margin-bottom: 0;">
+          <strong>Prototype Confirmation:</strong> This order was completed in local demo mode. No charges were made.
+        </div>
+      </div>
+
+      <div class="btn-group" style="justify-content: center;">
+        <a class="btn btn--solid" href="shop.html">Continue Shopping <span class="arrow" data-icon="arrow"></span></a>
+        <a class="btn" href="index.html">Return to Homepage</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-brand__name">SUREA</p>
+        <p class="footer-brand__tag">Dogs · People · A Kinder World</p>
+        <p class="mt-s small">Join our journey — be the first to hear about new collections, stories and special offers.</p>
+        <form class="subscribe" data-subscribe novalidate>
+          <label class="skip-link" for="subscribe-email">Email address</label>
+          <input id="subscribe-email" type="email" placeholder="Your email address" autocomplete="email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+        <p class="form-note" data-form-note></p>
+      </div>
+      <div>
+        <h4>Customer Care</h4>
+        <ul>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="shipping-returns.html">Shipping &amp; returns</a></li>
+          <li><a href="size-guide.html">Size guide</a></li>
+          <li><a href="contact.html#faqs">FAQs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>About</h4>
+        <ul>
+          <li><a href="about.html">Our story</a></li>
+          <li><a href="collection.html">Collection 01</a></li>
+          <li><a href="about.html#sustainability">Sustainability</a></li>
+          <li><a href="journal.html">Journal</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><span data-icon="instagram"></span></a>
+          <a href="#" aria-label="Pinterest"><span data-icon="pinterest"></span></a>
+          <a href="#" aria-label="TikTok"><span data-icon="tiktok"></span></a>
+          <a href="#" aria-label="Facebook"><span data-icon="facebook"></span></a>
+          <a href="#" aria-label="YouTube"><span data-icon="youtube"></span></a>
+        </div>
+        <p class="small mt-s">For a kinder,<br>more beautiful world.</p>
+      </div>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© <span data-year>2026</span> SUREA. All rights reserved.</span>
+    <span>A kinder world for dogs</span>
+  </div>
+</footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/cart.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var emptyView = document.getElementById("checkout-empty");
+  var activeView = document.getElementById("checkout-active");
+  var confView = document.getElementById("checkout-confirmation");
+
+  var itemsList = document.getElementById("checkout-items-list");
+  var subtotalEl = document.getElementById("sum-subtotal");
+  var shipEl = document.getElementById("sum-shipping");
+  var shipCostDisplay = document.getElementById("ship-cost-display");
+  var totalEl = document.getElementById("sum-total");
+  var form = document.getElementById("checkout-form");
+  var errorNote = document.getElementById("checkout-error");
+
+  function refresh() {
+    var s = window.SUREA_cart.summary();
+    if (!s.lines.length) {
+      emptyView.style.display = "block";
+      activeView.style.display = "none";
+      confView.style.display = "none";
+      return;
+    }
+
+    emptyView.style.display = "none";
+    activeView.style.display = "block";
+    confView.style.display = "none";
+
+    // Render items
+    itemsList.innerHTML = s.lines.map(function (item) {
+      return '<div style="display: flex; gap: 14px; margin-bottom: 14px; align-items: center; border-bottom: 1px solid var(--line); padding-bottom: 12px;">' +
+        '<div style="width: 54px; height: 64px; background: var(--cream); border: 1px solid var(--line); flex-shrink: 0; overflow: hidden;">' +
+          '<img src="' + SUREAui.esc(item.image) + '" alt="' + SUREAui.esc(item.name) + '" style="width:100%; height:100%; object-fit:cover;">' +
+        '</div>' +
+        '<div style="flex: 1; min-width: 0;">' +
+          '<h3 style="font-family: var(--display); font-size: 15px; color: var(--forest); margin: 0;">' + SUREAui.esc(item.name) + '</h3>' +
+          '<p class="small muted" style="margin: 2px 0 0;">Size: ' + SUREAui.esc(item.size) + ' · Qty: ' + item.qty + '</p>' +
+        '</div>' +
+        '<span style="font-family: var(--display); font-size: 15px; color: var(--forest);">' + window.SUREA.money(item.total) + '</span>' +
+      '</div>';
+    }).join("");
+
+    // Calculate delivery
+    var isExpress = form.querySelector('input[name="shipping_method"]:checked').value === "express";
+    var standardCost = s.qualifies ? 0 : 10;
+    shipCostDisplay.textContent = standardCost === 0 ? "Free" : "$10.00";
+
+    var shippingFee = isExpress ? 15 : standardCost;
+    var finalTotal = s.subtotal + shippingFee;
+
+    subtotalEl.textContent = window.SUREA.money(s.subtotal);
+    shipEl.textContent = shippingFee === 0 ? "Complimentary" : window.SUREA.money(shippingFee);
+    totalEl.textContent = window.SUREA.money(finalTotal);
+  }
+
+  // Handle shipping radio changes
+  form.querySelectorAll('input[name="shipping_method"]').forEach(function (radio) {
+    radio.addEventListener("change", refresh);
+  });
+
+  // Handle Form Submit
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    errorNote.textContent = "";
+
+    var email = document.getElementById("c-email").value.trim();
+    var fname = document.getElementById("c-fname").value.trim();
+    var lname = document.getElementById("c-lname").value.trim();
+    var addr = document.getElementById("c-addr").value.trim();
+    var city = document.getElementById("c-city").value.trim();
+    var postcode = document.getElementById("c-postcode").value.trim();
+
+    if (!email || !fname || !lname || !addr || !city || !postcode) {
+      errorNote.textContent = "Please complete all mandatory delivery fields (*).";
+      return;
+    }
+
+    // Generate simulated order confirmation number
+    var randNum = Math.floor(10000 + Math.random() * 90000);
+    var orderNum = "#SR-2026-" + randNum;
+
+    document.getElementById("conf-order-num").textContent = orderNum;
+    document.getElementById("conf-email").textContent = email;
+
+    // Clear cart and switch view
+    window.SUREA_cart.clear();
+    activeView.style.display = "none";
+    confView.style.display = "block";
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  // Listen to cart changes
+  window.SUREA_cart.onChange(refresh);
+  refresh();
+});
+</script>
+</body>
+</html>
